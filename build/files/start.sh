@@ -10,12 +10,12 @@ fi
 
 if [ -d $JBOSS_HOME/standalone/deployments/nts.uk.at.web.war ]
 then
-	touch $JBOSS_HOME/standalone/deployments/nts.uk.com.at.war.dodeploy
+	touch $JBOSS_HOME/standalone/deployments/nts.uk.at.web.war.dodeploy
 fi
 
 if [ -d $JBOSS_HOME/standalone/deployments/nts.uk.mobile.web.war ]
 then
-	touch $JBOSS_HOME/standalone/deployments/nts.uk.com.mobile.war.dodeploy
+	touch $JBOSS_HOME/standalone/deployments/nts.uk.mobile.web.war.dodeploy
 fi
 
 standalone.sh -b 0.0.0.0 -bmanagement 0.0.0.0

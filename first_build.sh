@@ -34,8 +34,3 @@ echo '/uk.at >> ./gradlew upver'
 ./gradlew upver
 echo '/uk.at >> ./gradlew tsc'
 ./gradlew tsc
-
-#Build BASE war
-cd $UK_SOURCE_PATH/uk.base
-echo '/uk.base >> ./gradlew war'
-./gradlew war
