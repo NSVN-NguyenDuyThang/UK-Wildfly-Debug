@@ -25,6 +25,8 @@ COPY ./lib/sqljdbc42.jar $JBOSS_HOME/modules/com/microsoft/sqlserver/jdbc/main
 COPY ./files/mssql/module.xml $JBOSS_HOME/modules/com/microsoft/sqlserver/jdbc/main
 # start cmd file
 COPY ./files/start.sh $JBOSS_HOME/bin/
+RUN sed -i 's/\r$//' $JBOSS_HOME/bin/start.sh
+RUN chmod +x $JBOSS_HOME/bin/start.sh
 COPY ./files/config-standalone.sh $JBOSS_HOME/bin/
 RUN chmod +x $JBOSS_HOME/bin/config-standalone.sh
 RUN sed -i 's/\r$//' $JBOSS_HOME/bin/config-standalone.sh
