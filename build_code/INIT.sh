@@ -1,4 +1,4 @@
-source env.sh
+source ../env.sh
 cd $UK_SOURCE_PATH/uk.base
 echo '/uk.base >> ./gradlew clean'
 ./gradlew clean
