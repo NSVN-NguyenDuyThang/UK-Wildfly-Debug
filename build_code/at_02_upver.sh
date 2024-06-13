@@ -2,4 +2,4 @@ source ../env.sh
 
 cd $UK_SOURCE_PATH/uk.at
 echo '/uk.at >> ./gradlew upver'
-./gradlew upver
+./gradlew upver --no-daemon
